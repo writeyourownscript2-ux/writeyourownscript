@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from '../hooks/useInView'
-import Modal from './Modal'
+import ProgramPage from './ProgramPage'
 import WaveDivider from './WaveDivider'
+import { AnimatePresence } from 'framer-motion'
 
 const programs = [
   {
@@ -146,7 +147,9 @@ export default function Programs() {
         </div>
       </div>
 
-      {modal && <Modal data={modal} onClose={() => setModal(null)} />}
+      <AnimatePresence>
+        {modal && <ProgramPage data={modal} onClose={() => setModal(null)} />}
+      </AnimatePresence>
       <WaveDivider fill="#ffffff" />
     </section>
   )

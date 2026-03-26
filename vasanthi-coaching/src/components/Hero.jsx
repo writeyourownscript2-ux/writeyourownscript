@@ -4,7 +4,7 @@ import WaveDivider from './WaveDivider'
 const WA_LINK = "https://wa.me/918939645676?text=Hi%20Vasanthi%2C%20I%20want%20to%20book%20a%20free%20session"
 
 // Indian woman — confident, professional
-const HERO_BG = "https://images.unsplash.com/photo-1610216705422-caa3fcb6d158?w=1600&q=80"
+const HERO_BG = "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=1600&q=80"
 
 export default function Hero() {
   return (
