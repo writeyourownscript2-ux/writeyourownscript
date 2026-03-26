@@ -94,7 +94,7 @@ export default function CoachingCategories() {
               }`}
             >
               <div className="text-3xl mb-3">{cat.icon}</div>
-              <h3 className="font-semibold text-gray-800 text-sm leading-tight">{cat.title}</h3>
+              <h3 className="font-semibold text-gray-800 text-base leading-tight">{cat.title}</h3>
             </motion.div>
           ))}
         </div>
@@ -123,7 +123,7 @@ export default function CoachingCategories() {
                   ].map(item => (
                     <div key={item.label}>
                       <div className={`font-semibold ${item.color} mb-2 text-sm uppercase tracking-wide`}>{item.label}</div>
-                      <p className="text-gray-600 text-sm leading-relaxed">{item.text}</p>
+                      <p className="text-gray-600 text-base leading-relaxed">{item.text}</p>
                     </div>
                   ))}
                 </div>

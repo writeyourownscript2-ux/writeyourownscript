@@ -9,7 +9,7 @@ const groups = [
     range: '6 – 18',
     label: 'Young Girls & Teens',
     emoji: '🌸',
-    image: 'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1588776814546-ec7e1b3a0a23?w=600&q=80',
     color: 'from-rose-400 to-pink-500',
     bg: 'from-rose-50 to-pink-50',
     border: 'border-rose-200',
@@ -26,7 +26,7 @@ const groups = [
     range: '18 – 40',
     label: 'Young Women & Professionals',
     emoji: '🔥',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1614644147798-f8c0fc9da7f6?w=600&q=80',
     color: 'from-pink-500 to-purple-600',
     bg: 'from-pink-50 to-purple-50',
     border: 'border-pink-200',
@@ -43,7 +43,7 @@ const groups = [
     range: '40 – 60',
     label: 'Mature Women & Reinventors',
     emoji: '👑',
-    image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=600&q=80',
     color: 'from-purple-500 to-violet-600',
     bg: 'from-purple-50 to-violet-50',
     border: 'border-purple-200',
@@ -113,11 +113,11 @@ export default function WhoIHelp() {
                 <span className={`inline-block text-xs font-bold px-3 py-1 rounded-full mb-3 ${g.tagColor}`}>
                   {g.label}
                 </span>
-                <p className="text-gray-600 text-sm leading-relaxed mb-5">{g.desc}</p>
+                <p className="text-gray-600 text-base leading-relaxed mb-5">{g.desc}</p>
 
                 <ul className="space-y-2 mb-6">
                   {g.points.map(p => (
-                    <li key={p} className="flex items-start gap-2 text-gray-600 text-sm">
+                    <li key={p} className="flex items-start gap-2 text-gray-600 text-base">
                       <span className="text-pink-400 mt-0.5 flex-shrink-0">✦</span>
                       {p}
                     </li>

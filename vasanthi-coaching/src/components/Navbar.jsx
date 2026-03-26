@@ -27,7 +27,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#" className="flex flex-col leading-tight">
           <span className="font-playfair text-xl font-bold gradient-text">Write Your Own Script</span>
-          <span className="text-xs text-gray-400 font-light tracking-wide">Rewire your life.. Live your dream</span>
+          <span className="text-xs text-gray-400 font-light tracking-wide">Rewrite your life.. Live your dream</span>
         </a>
 
         {/* Desktop */}

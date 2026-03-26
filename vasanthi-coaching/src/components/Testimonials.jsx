@@ -6,42 +6,42 @@ const testimonials = [
   {
     name: 'Priya S.',
     role: 'Marketing Professional',
-    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80',
+    avatar: 'https://images.unsplash.com/photo-1610216705422-caa3fcb6d158?w=100&q=80',
     text: 'Working with Vasanthi completely changed how I see myself. I went from constantly second-guessing every decision to leading my team with confidence. The clarity I gained in just 8 sessions was life-changing.',
     stars: 5,
   },
   {
     name: 'Ananya R.',
     role: 'Engineering Student',
-    avatar: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100&q=80',
+    avatar: 'https://images.unsplash.com/photo-1614644147798-f8c0fc9da7f6?w=100&q=80',
     text: 'I was so lost about my career path and couldn\'t stop overthinking. Vasanthi helped me find my direction and actually believe in myself. I got placed in my dream company 2 months after our sessions!',
     stars: 5,
   },
   {
     name: 'Meera K.',
     role: 'Entrepreneur',
-    avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80',
+    avatar: 'https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=100&q=80',
     text: 'I was burned out, emotionally drained, and had completely lost myself. The Phoenix Women program gave me back my identity. I now run my business with joy instead of fear. Vasanthi is truly gifted.',
     stars: 5,
   },
   {
     name: 'Divya M.',
     role: 'Teacher',
-    avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&q=80',
+    avatar: 'https://images.unsplash.com/photo-1588776814546-ec7e1b3a0a23?w=100&q=80',
     text: 'I never thought I deserved to invest in myself. Vasanthi showed me that self-love isn\'t selfish — it\'s essential. My relationships, my work, my entire life improved when I started showing up for myself.',
     stars: 5,
   },
   {
     name: 'Kavitha T.',
     role: 'MBA Student',
-    avatar: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=100&q=80',
+    avatar: 'https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=100&q=80',
     text: 'The mindset shifts I experienced with Vasanthi are permanent. She doesn\'t just give you tools — she helps you understand WHY you think the way you do. That awareness alone transformed everything.',
     stars: 5,
   },
   {
     name: 'Lakshmi P.',
     role: 'Homemaker turned Coach',
-    avatar: 'https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=100&q=80',
+    avatar: 'https://images.unsplash.com/photo-1583394293214-0b3b3b3b3b3b?w=100&q=80',
     text: 'At 38, I thought it was too late to start over. Vasanthi proved me wrong. I discovered my purpose, built my confidence, and launched my own coaching practice. She is the reason I believe in myself today.',
     stars: 5,
   },
@@ -86,7 +86,7 @@ export default function Testimonials() {
                 ))}
               </div>
 
-              <p className="text-gray-600 leading-relaxed mb-6 text-sm italic">"{t.text}"</p>
+              <p className="text-gray-600 leading-relaxed mb-6 text-base italic">"{t.text}"</p>
 
               <div className="flex items-center gap-3">
                 <img

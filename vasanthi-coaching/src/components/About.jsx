@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { useInView } from '../hooks/useInView'
 import WaveDivider from './WaveDivider'
 
-const ABOUT_IMG = "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=700&q=80"
+const ABOUT_IMG = "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=700&q=80"
 
 export default function About() {
   const [ref, inView] = useInView()
@@ -36,7 +36,7 @@ export default function About() {
                 </div>
                 <div>
                   <div className="font-bold text-gray-800">Certified Life Coach</div>
-                  <div className="text-pink-600 text-sm">NLP Practitioner • Mindset Expert</div>
+                  <div className="text-pink-600 text-sm">Certified Life Coach • Mindset Expert</div>
                 </div>
               </div>
             </div>

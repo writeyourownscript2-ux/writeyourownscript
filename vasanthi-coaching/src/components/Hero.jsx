@@ -3,8 +3,8 @@ import WaveDivider from './WaveDivider'
 
 const WA_LINK = "https://wa.me/918939645676?text=Hi%20Vasanthi%2C%20I%20want%20to%20book%20a%20free%20session"
 
-// Unsplash free-to-use motivational woman image
-const HERO_BG = "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=1600&q=80"
+// Hero background — Indian woman, confident
+const HERO_BG = "https://images.unsplash.com/photo-1610216705422-caa3fcb6d158?w=1600&q=80"
 
 export default function Hero() {
   return (
@@ -97,7 +97,7 @@ export default function Hero() {
           <div className="relative">
             <div className="w-80 h-96 rounded-3xl overflow-hidden border-2 border-pink-400/30 shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80"
+                src="https://images.unsplash.com/photo-1614644147798-f8c0fc9da7f6?w=600&q=80"
                 alt="Life Coach Vasanthi"
                 className="w-full h-full object-cover"
               />

@@ -93,7 +93,7 @@ export default function Transformation() {
                 </div>
               </div>
 
-              <p className="text-pink-100/80 text-sm leading-relaxed">{step.desc}</p>
+              <p className="text-pink-100/80 text-base leading-relaxed">{step.desc}</p>
             </motion.div>
           ))}
         </div>
