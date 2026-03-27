@@ -1,7 +1,9 @@
-const WA_LINK = "https://wa.me/918939645676?text=Hi%20Vasanthi%2C%20I%20want%20to%20book%20a%20free%20session"
+import logoPng from '../assets/logo.png'
+
+const WA_LINK = "https://wa.me/918939645676?text=Hi%2C%20I%20want%20to%20book%20a%20free%20session"
 
 export default function Footer() {
-  const links = ['About', 'Programs', 'Coaching', 'Testimonials', 'Book']
+  const links = ['About', 'Programs', 'Coaching', 'Book']
 
   return (
     <footer className="bg-gray-900 text-gray-400 py-16">
@@ -9,10 +11,9 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <div className="font-playfair text-3xl font-bold gradient-text mb-4">Vasanthi</div>
+            <img src={logoPng} alt="Write Your Own Script" className="h-14 w-auto mb-4" />
             <p className="text-gray-500 text-sm leading-relaxed mb-6">
-              Certified Life Coach helping women and students transform their lives through clarity,
-              confidence, and mindset mastery.
+              Helping you rewrite your story — with clarity, confidence, and purpose.
             </p>
             <a
               href={WA_LINK}
@@ -33,10 +34,7 @@ export default function Footer() {
             <ul className="space-y-3">
               {links.map(l => (
                 <li key={l}>
-                  <a
-                    href={`#${l.toLowerCase()}`}
-                    className="text-gray-500 hover:text-pink-400 transition-colors text-sm"
-                  >
+                  <a href={`/#${l.toLowerCase()}`} className="text-gray-500 hover:text-pink-400 transition-colors text-sm">
                     {l}
                   </a>
                 </li>
@@ -54,15 +52,9 @@ export default function Footer() {
               <li>💎 Confidence Coaching</li>
               <li>🧠 Mindset Coaching</li>
             </ul>
-
             <div className="mt-8">
               <h4 className="text-white font-semibold mb-2 text-sm uppercase tracking-wider">Contact</h4>
-              <a
-                href={WA_LINK}
-                target="_blank"
-                rel="noreferrer"
-                className="text-green-400 hover:text-green-300 text-sm transition-colors"
-              >
+              <a href={WA_LINK} target="_blank" rel="noreferrer" className="text-green-400 hover:text-green-300 text-sm transition-colors">
                 +91 89396 45676
               </a>
             </div>
@@ -70,12 +62,8 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-gray-600 text-sm">
-            © 2025 Vasanthi Life Coaching. All rights reserved.
-          </p>
-          <p className="text-gray-600 text-sm italic font-playfair">
-            "Rise Strong. Reclaim Yourself. Become Unstoppable."
-          </p>
+          <p className="text-gray-600 text-sm">© 2025 Write Your Own Script. All rights reserved.</p>
+          <p className="text-gray-600 text-sm italic font-playfair">"Rewrite your life.. Live your dream"</p>
         </div>
       </div>
     </footer>

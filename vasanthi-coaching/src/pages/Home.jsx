@@ -7,7 +7,6 @@ import WhoIHelp from '../components/WhoIHelp'
 import Programs from '../components/Programs'
 import CoachingCategories from '../components/CoachingCategories'
 import Transformation from '../components/Transformation'
-import BrandMessage from '../components/BrandMessage'
 import Booking from '../components/Booking'
 import ContactForm from '../components/ContactForm'
 import FinalCTA from '../components/FinalCTA'
@@ -53,7 +52,6 @@ export default function Home() {
         quote="You didn't come this far to only come this far. Rise, woman. Rise."
       />
 
-      <BrandMessage />
       <Booking />
       <ContactForm />
       <FinalCTA />

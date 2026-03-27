@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { useLocation, useNavigate } from 'react-router-dom'
+import logoPng from '../assets/logo.png'
 
 const WA_LINK = "https://wa.me/918939645676?text=Hi%20Vasanthi%2C%20I%20want%20to%20book%20a%20free%20session"
 
@@ -17,7 +18,7 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  const links = ['About', 'Programs', 'Coaching', 'Testimonials', 'Book']
+  const links = ['About', 'Programs', 'Coaching', 'Book']
 
   // If on home, smooth scroll; if on another page, go to /#section
   const handleNavClick = (e, section) => {
@@ -41,13 +42,12 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo — always goes home */}
-        <a href="/" className="flex flex-col leading-tight" onClick={e => { e.preventDefault(); navigate('/') }}>
-          <span className={`font-playfair text-xl font-bold ${scrolled ? 'gradient-text' : 'text-white'}`}>
-            Write Your Own Script
-          </span>
-          <span className={`text-xs font-light tracking-wide ${scrolled ? 'text-gray-400' : 'text-white/70'}`}>
-            Rewrite your life.. Live your dream
-          </span>
+        <a href="/" className="flex items-center" onClick={e => { e.preventDefault(); navigate('/') }}>
+          <img
+            src={logoPng}
+            alt="Write Your Own Script"
+            className="h-10 w-auto"
+          />
         </a>
 
         {/* Desktop links */}
