@@ -27,21 +27,12 @@ export default function Transformation() {
       className="relative overflow-hidden"
       style={{ background: 'linear-gradient(135deg, #1a0a2e 0%, #2d0a4e 60%, #4a0a3e 100%)' }}
     >
-      {/* Inverted wave at top — white shape pointing down into dark section */}
-      <div style={{ lineHeight: 0, display: 'block' }}>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 70" preserveAspectRatio="none"
-          style={{ display: 'block', width: '100%', height: '70px' }}>
-          <path fill="#ffffff" fillOpacity="1"
-            d="M0,0 L0,35 C240,0 480,70 720,35 C960,0 1200,70 1440,35 L1440,0 Z" />
-        </svg>
-      </div>
-
       {/* Background image */}
       <div className="absolute inset-0 bg-cover bg-center opacity-40"
         style={{ backgroundImage: `url(${BG})` }} />
       <div className="absolute inset-0 bg-black/30" />
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6 pt-8 pb-20">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 pt-20 pb-20">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 30 }}
