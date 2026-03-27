@@ -49,7 +49,7 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Programs</h4>
             <ul className="space-y-3 text-sm text-gray-500">
               <li>🔥 Phoenix Women</li>
-              <li>🌟 Phoenix Future Leaders</li>
+              <li>🌟 Phoenix Future Visionaries</li>
               <li>🎯 Clarity Coaching</li>
               <li>💎 Confidence Coaching</li>
               <li>🧠 Mindset Coaching</li>

@@ -2,8 +2,7 @@ import { motion } from 'framer-motion'
 
 const WA_LINK = "https://wa.me/918939645676?text=Hi%20Vasanthi%2C%20I%20want%20to%20book%20a%20free%20session"
 
-// Indian woman — confident, professional
-const HERO_BG = "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=1600&q=80"
+const HERO_BG = "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=1600&q=80"
 
 export default function Hero() {
   return (
@@ -95,7 +94,7 @@ export default function Hero() {
           <div className="relative">
             <div className="w-80 h-96 rounded-3xl overflow-hidden border-2 border-white/30 shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=600&q=80"
+                src="https://images.unsplash.com/photo-1610216705422-caa3fcb6d158?w=600&q=80"
                 alt="Life Coach Vasanthi"
                 className="w-full h-full object-cover"
               />

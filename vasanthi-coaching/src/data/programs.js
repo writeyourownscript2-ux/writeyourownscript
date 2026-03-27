@@ -35,12 +35,12 @@ export const programs = [
   {
     id: 'phoenix-leaders',
     emoji: '🌟',
-    title: 'Phoenix Future Leaders',
+    title: 'Phoenix Future Visionaries',
     tagline: 'Build Clarity. Lead Your Future.',
     color: 'from-violet-500 to-purple-600',
     borderColor: 'border-violet-200',
     problems: ['Career confusion', 'Overthinking', 'Lack of focus'],
-    description: "Phoenix Future Leaders is built for students and young adults who feel overwhelmed by choices, paralyzed by overthinking, or unsure of their path. This program takes you from confusion to clarity, from self-doubt to confidence, and from procrastination to purposeful action — so you can lead your own future with intention.",
+    description: "Phoenix Future Visionaries is built for students and young adults — boys and girls — who feel overwhelmed by choices, paralyzed by overthinking, or unsure of their path. This program takes you from confusion to clarity, from self-doubt to confidence, and from procrastination to purposeful action — so you can lead your own future with intention.",
     image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1200&q=80',
     photos: [
       'https://images.unsplash.com/photo-1621452773781-0f992fd1f5cb?w=400&q=80',

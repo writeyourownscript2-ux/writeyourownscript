@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion'
 import { useInView } from '../hooks/useInView'
+import heroBg from '../assets/herobg.png'
 
-const ABOUT_IMG = "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=700&q=80"
+const ABOUT_IMG = heroBg
 
 export default function About() {
   const [ref, inView] = useInView()
@@ -25,19 +26,6 @@ export default function About() {
                 className="w-full h-[500px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-pink-900/40 to-transparent" />
-            </div>
-            <div className="absolute -top-6 -left-6 w-32 h-32 rounded-full bg-gradient-to-br from-pink-200 to-purple-200 -z-10" />
-            <div className="absolute -bottom-6 -right-6 w-48 h-48 rounded-full bg-gradient-to-br from-purple-100 to-pink-100 -z-10" />
-            <div className="absolute bottom-8 left-8 right-8 bg-white/95 backdrop-blur rounded-2xl p-5 shadow-xl">
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-pink-500 to-purple-600 flex items-center justify-center text-white text-xl">
-                  🌟
-                </div>
-                <div>
-                  <div className="font-bold text-gray-800">Certified Life Coach</div>
-                  <div className="text-pink-600 text-sm">Certified Life Coach • Mindset Expert</div>
-                </div>
-              </div>
             </div>
           </motion.div>
 

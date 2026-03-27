@@ -8,7 +8,6 @@ import Programs from '../components/Programs'
 import CoachingCategories from '../components/CoachingCategories'
 import Transformation from '../components/Transformation'
 import BrandMessage from '../components/BrandMessage'
-import Testimonials from '../components/Testimonials'
 import Booking from '../components/Booking'
 import ContactForm from '../components/ContactForm'
 import FinalCTA from '../components/FinalCTA'
@@ -55,13 +54,6 @@ export default function Home() {
       />
 
       <BrandMessage />
-      <Testimonials />
-
-      <ParallaxStrip
-        image="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1600&q=80"
-        quote="The best investment you will ever make is in yourself."
-      />
-
       <Booking />
       <ContactForm />
       <FinalCTA />

@@ -36,11 +36,10 @@ export default function Booking() {
           </p>
 
           {/* Details cards */}
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
+          <div className="grid md:grid-cols-2 gap-6 mb-12">
             {[
               { icon: '🎁', title: 'First Session FREE', desc: 'Zero cost, zero risk. Just pure value.' },
               { icon: '⏱️', title: '1 Hour Session', desc: 'A full hour dedicated entirely to you.' },
-              { icon: '📦', title: '8–10 Session Packages', desc: 'Tailored to your individual needs and goals.' },
             ].map(item => (
               <div
                 key={item.title}

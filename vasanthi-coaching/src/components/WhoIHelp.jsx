@@ -6,7 +6,7 @@ const WA_LINK = "https://wa.me/918939645676?text=Hi%20Vasanthi%2C%20I%20want%20t
 const groups = [
   {
     range: '6 – 18',
-    label: 'Young Girls & Teens',
+    label: 'Young Students & Teens',
     emoji: '🌸',
     image: 'https://images.unsplash.com/photo-1621452773781-0f992fd1f5cb?w=600&q=80',
     color: 'from-rose-400 to-pink-500',
@@ -19,7 +19,7 @@ const groups = [
       'Discovering identity & purpose',
       'Academic stress & focus',
     ],
-    desc: 'The foundation of a powerful woman is built in her early years. Help your daughter develop unshakeable confidence before the world tries to dim her light.',
+    desc: 'The foundation of a powerful life is built in the early years. Help your child develop unshakeable confidence, focus, and clarity before the world tries to dim their light.',
   },
   {
     range: '18 – 40',

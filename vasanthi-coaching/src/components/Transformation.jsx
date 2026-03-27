@@ -64,21 +64,34 @@ export default function Transformation() {
               transition={{ duration: 0.7, delay: i * 0.15 }}
               className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300"
             >
-              <div className="flex items-center gap-3 mb-6">
-                <div className="text-center">
-                  <div className="text-3xl mb-1">{step.icon}</div>
-                  <div className="text-pink-300/70 text-sm font-medium">{step.from}</div>
-                </div>
-                <div className="flex-1 flex items-center justify-center">
-                  <div className="flex items-center gap-1">
-                    <div className="w-8 h-px bg-gradient-to-r from-pink-400 to-purple-400" />
-                    <div className="text-pink-400 text-lg">→</div>
-                    <div className="w-8 h-px bg-gradient-to-r from-purple-400 to-pink-400" />
+              <div className="flex flex-col items-center gap-2 mb-6">
+                {/* From */}
+                <div className="flex items-center gap-3 w-full">
+                  <div className="w-14 h-14 rounded-full bg-white/15 border border-white/30 flex flex-col items-center justify-center flex-shrink-0">
+                    <div className="text-2xl leading-none">{step.icon}</div>
+                  </div>
+                  <div>
+                    <div className="text-pink-300/60 text-xs uppercase tracking-widest">From</div>
+                    <div className="text-pink-200 font-semibold text-lg">{step.from}</div>
                   </div>
                 </div>
-                <div className="text-center">
-                  <div className="text-3xl mb-1">{step.toIcon}</div>
-                  <div className="text-white font-bold text-sm">{step.to}</div>
+
+                {/* Arrow */}
+                <div className="flex flex-col items-center gap-1 py-1">
+                  <div className="w-px h-4 bg-gradient-to-b from-pink-400 to-purple-400" />
+                  <div className="text-pink-400 text-base">↓</div>
+                  <div className="w-px h-4 bg-gradient-to-b from-purple-400 to-pink-400" />
+                </div>
+
+                {/* To */}
+                <div className="flex items-center gap-3 w-full">
+                  <div className="w-14 h-14 rounded-full bg-gradient-to-br from-pink-500/40 to-purple-500/40 border border-pink-400/40 flex flex-col items-center justify-center flex-shrink-0">
+                    <div className="text-2xl leading-none">{step.toIcon}</div>
+                  </div>
+                  <div>
+                    <div className="text-pink-300/60 text-xs uppercase tracking-widest">To</div>
+                    <div className="text-white font-bold text-lg">{step.to}</div>
+                  </div>
                 </div>
               </div>
               <p className="text-pink-100/80 text-base leading-relaxed">{step.desc}</p>
