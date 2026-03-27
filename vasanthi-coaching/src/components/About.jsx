@@ -1,8 +1,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from '../hooks/useInView'
-import heroBg from '../assets/herobg.png'
 
-const ABOUT_IMG = heroBg
+const ABOUT_IMG = "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=700&q=80"
 
 export default function About() {
   const [ref, inView] = useInView()
