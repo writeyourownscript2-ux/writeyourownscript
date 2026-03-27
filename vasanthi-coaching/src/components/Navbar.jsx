@@ -1,11 +1,15 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
+import { useLocation, useNavigate } from 'react-router-dom'
 
 const WA_LINK = "https://wa.me/918939645676?text=Hi%20Vasanthi%2C%20I%20want%20to%20book%20a%20free%20session"
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const location = useLocation()
+  const navigate = useNavigate()
+  const isHome = location.pathname === '/'
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40)
@@ -14,6 +18,17 @@ export default function Navbar() {
   }, [])
 
   const links = ['About', 'Programs', 'Coaching', 'Testimonials', 'Book']
+
+  // If on home, smooth scroll; if on another page, go to /#section
+  const handleNavClick = (e, section) => {
+    e.preventDefault()
+    setMenuOpen(false)
+    if (isHome) {
+      document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' })
+    } else {
+      navigate(`/#${section}`)
+    }
+  }
 
   return (
     <motion.nav
@@ -25,17 +40,23 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#" className="flex flex-col leading-tight">
-          <span className={`font-playfair text-xl font-bold ${scrolled ? 'gradient-text' : 'text-white'}`}>Write Your Own Script</span>
-          <span className={`text-xs font-light tracking-wide ${scrolled ? 'text-gray-400' : 'text-white/70'}`}>Rewrite your life.. Live your dream</span>
+        {/* Logo — always goes home */}
+        <a href="/" className="flex flex-col leading-tight" onClick={e => { e.preventDefault(); navigate('/') }}>
+          <span className={`font-playfair text-xl font-bold ${scrolled ? 'gradient-text' : 'text-white'}`}>
+            Write Your Own Script
+          </span>
+          <span className={`text-xs font-light tracking-wide ${scrolled ? 'text-gray-400' : 'text-white/70'}`}>
+            Rewrite your life.. Live your dream
+          </span>
         </a>
 
-        {/* Desktop */}
+        {/* Desktop links */}
         <ul className="hidden md:flex gap-8 list-none m-0 p-0">
           {links.map(l => (
             <li key={l}>
               <a
-                href={`#${l.toLowerCase()}`}
+                href={`/#${l.toLowerCase()}`}
+                onClick={e => handleNavClick(e, l.toLowerCase())}
                 className={`font-medium transition-colors text-sm tracking-wide ${
                   scrolled ? 'text-gray-600 hover:text-pink-600' : 'text-white/90 hover:text-pink-300'
                 }`}
@@ -46,7 +67,8 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <a href={WA_LINK} target="_blank" rel="noreferrer" className="hidden md:inline-block btn-primary text-sm py-3 px-6">
+        <a href={WA_LINK} target="_blank" rel="noreferrer"
+          className="hidden md:inline-block btn-primary text-sm py-3 px-6">
           Book Free Session
         </a>
 
@@ -56,9 +78,9 @@ export default function Navbar() {
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
-          <span className={`block w-6 h-0.5 bg-gray-700 transition-all ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} />
-          <span className={`block w-6 h-0.5 bg-gray-700 transition-all ${menuOpen ? 'opacity-0' : ''}`} />
-          <span className={`block w-6 h-0.5 bg-gray-700 transition-all ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
+          <span className={`block w-6 h-0.5 transition-all ${scrolled ? 'bg-gray-700' : 'bg-white'} ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} />
+          <span className={`block w-6 h-0.5 transition-all ${scrolled ? 'bg-gray-700' : 'bg-white'} ${menuOpen ? 'opacity-0' : ''}`} />
+          <span className={`block w-6 h-0.5 transition-all ${scrolled ? 'bg-gray-700' : 'bg-white'} ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
         </button>
       </div>
 
@@ -68,9 +90,9 @@ export default function Navbar() {
           {links.map(l => (
             <a
               key={l}
-              href={`#${l.toLowerCase()}`}
+              href={`/#${l.toLowerCase()}`}
+              onClick={e => handleNavClick(e, l.toLowerCase())}
               className="text-gray-700 font-medium py-1"
-              onClick={() => setMenuOpen(false)}
             >
               {l}
             </a>
