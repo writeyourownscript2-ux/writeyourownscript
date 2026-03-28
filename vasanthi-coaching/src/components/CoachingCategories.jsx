@@ -66,6 +66,27 @@ const categories = [
     why: 'Burnout is not a badge of honour. A balanced life is a productive, joyful, and sustainable one.',
     who: 'Professionals, working women, and students who feel overwhelmed, exhausted, or like they\'re always running on empty.',
   },
+  {
+    icon: '🚀',
+    title: 'Performance Coaching',
+    what: 'Unlock your peak potential by eliminating mental blocks, building focus, and executing with consistency.',
+    why: 'Talent alone doesn\'t win. Performance coaching bridges the gap between where you are and what you\'re truly capable of.',
+    who: 'Students, professionals, and achievers who want to perform at their best — consistently, not just occasionally.',
+  },
+  {
+    icon: '📚',
+    title: 'Academic / Student Coaching',
+    what: 'Build study habits, manage exam stress, find direction, and develop the mindset needed to thrive academically.',
+    why: 'Academic success is not just about intelligence — it\'s about focus, strategy, and belief in yourself.',
+    who: 'Students struggling with motivation, exam pressure, career confusion, or simply wanting to perform at their best.',
+  },
+  {
+    icon: '🎯',
+    title: 'Goal Setting Coaching',
+    what: 'Define clear, meaningful goals and build a step-by-step action plan to achieve them with accountability.',
+    why: 'A goal without a plan is just a wish. Structured goal setting turns dreams into real, measurable outcomes.',
+    who: 'Anyone who sets goals but never follows through, or feels stuck not knowing where to even begin.',
+  },
 ]
 
 export default function CoachingCategories() {
@@ -92,7 +113,7 @@ export default function CoachingCategories() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 gap-4">
           {categories.map((cat, i) => (
             <motion.div
               key={cat.title}

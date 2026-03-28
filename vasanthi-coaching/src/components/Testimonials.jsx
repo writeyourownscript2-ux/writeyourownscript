@@ -3,51 +3,19 @@ import { useInView } from '../hooks/useInView'
 
 const testimonials = [
   {
-    name: 'Priya S.',
-    role: 'Marketing Professional',
-    initials: 'PS',
+    name: 'Sivashankari',
+    role: 'Vice President, IV Meditation School',
+    initials: 'SS',
     color: 'from-pink-500 to-rose-500',
-    text: 'Working with Vasanthi completely changed how I see myself. I went from constantly second-guessing every decision to leading my team with confidence. The clarity I gained was life-changing.',
+    text: 'I have learned how to set clear intentions. The session gave clarity on how to choose ambitions or role models and how to imbibe their qualities in us. I also learned about gratitude and I will practice it regularly.',
     stars: 5,
   },
   {
-    name: 'Ananya R.',
-    role: 'Engineering Student',
-    initials: 'AR',
+    name: 'Sahana',
+    role: 'Student, Class 10 (Age 14)',
+    initials: 'SA',
     color: 'from-purple-500 to-violet-500',
-    text: 'I was so lost about my career path and couldn\'t stop overthinking. Vasanthi helped me find my direction and actually believe in myself. I got placed in my dream company after our sessions!',
-    stars: 5,
-  },
-  {
-    name: 'Meera K.',
-    role: 'Entrepreneur',
-    initials: 'MK',
-    color: 'from-pink-600 to-purple-600',
-    text: 'I was burned out, emotionally drained, and had completely lost myself. The Phoenix Women program gave me back my identity. I now run my business with joy instead of fear.',
-    stars: 5,
-  },
-  {
-    name: 'Divya M.',
-    role: 'Teacher',
-    initials: 'DM',
-    color: 'from-rose-500 to-pink-600',
-    text: 'I never thought I deserved to invest in myself. Vasanthi showed me that self-love isn\'t selfish — it\'s essential. My relationships, my work, my entire life improved.',
-    stars: 5,
-  },
-  {
-    name: 'Kavitha T.',
-    role: 'MBA Student',
-    initials: 'KT',
-    color: 'from-violet-500 to-purple-600',
-    text: 'The mindset shifts I experienced with Vasanthi are permanent. She doesn\'t just give you tools — she helps you understand WHY you think the way you do. That awareness transformed everything.',
-    stars: 5,
-  },
-  {
-    name: 'Lakshmi P.',
-    role: 'Homemaker turned Coach',
-    initials: 'LP',
-    color: 'from-purple-500 to-pink-500',
-    text: 'At 38, I thought it was too late to start over. Vasanthi proved me wrong. I discovered my purpose, built my confidence, and launched my own coaching practice.',
+    text: 'After attending this session I learned how to fix the goal and vision of my life. I have learned to say gratitude and I now feel grateful for all the things I have received from God. Earlier I don\'t like to study — it was like "why should I study?" Now I have changed my mindset. Now I am choosing to study. I thank our life coach for giving us the clarity on what we should do and how we should do.',
     stars: 5,
   },
 ]
@@ -75,7 +43,7 @@ export default function Testimonials() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {testimonials.map((t, i) => (
             <motion.div
               key={t.name}
