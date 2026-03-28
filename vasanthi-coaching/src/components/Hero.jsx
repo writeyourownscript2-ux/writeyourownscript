@@ -45,7 +45,7 @@ export default function Hero() {
           className="font-playfair text-4xl md:text-6xl font-bold text-white leading-tight mb-5 drop-shadow-lg"
         >
           Transform Your Life —{' '}
-          <span className="text-pink-300">Starting Today</span>
+          <span className="text-pink-300">Start Today</span>
         </motion.h1>
 
         <motion.p

@@ -41,13 +41,13 @@ export default function About() {
               <span className="gradient-text">Life Coach</span>
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-6">
-              A certified life coach dedicated to helping women and students break free from
+              A certified life coach dedicated to helping women break free from
               self-limiting beliefs and step into their fullest potential. With a heart-centered,
               results-driven approach, I guide you from where you are to where you truly want to be.
             </p>
             <p className="text-gray-600 leading-relaxed mb-8">
-              My coaching is rooted in practical strategies — no fluff, no generic advice. Whether
-              you're struggling with clarity, confidence, or mindset blocks, I meet you exactly where
+              My coaching is rooted in practical strategies — no generic advice. Whether
+              you're struggling with clarity, confidence or mindset blocks, I meet you exactly where
               you are and walk with you every step of the way.
             </p>
             <div className="grid grid-cols-1 gap-4 mb-8">
