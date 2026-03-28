@@ -1,6 +1,6 @@
 import logoPng from '../assets/logo.png'
 
-const WA_LINK = "https://wa.me/918939645676?text=Hi%2C%20I%20want%20to%20book%20a%20free%20session"
+const WA_LINK = "https://wa.me/918939645676?text=Hi%2C%20I%20want%20to%20book%20an%20appointment"
 
 export default function Footer() {
   const links = ['About', 'Programs', 'Coaching', 'Book']
@@ -55,7 +55,7 @@ export default function Footer() {
             <div className="mt-8">
               <h4 className="text-white font-semibold mb-2 text-sm uppercase tracking-wider">Contact</h4>
               <a href={WA_LINK} target="_blank" rel="noreferrer" className="text-green-400 hover:text-green-300 text-sm transition-colors">
-                +91 89396 45676
+                WhatsApp Us
               </a>
             </div>
           </div>

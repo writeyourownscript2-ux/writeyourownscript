@@ -38,7 +38,7 @@ export default function Programs() {
             >
               {/* Image */}
               <div className="relative h-52 overflow-hidden">
-                <img src={prog.image} alt={prog.title} className="w-full h-full object-cover" />
+                <img src={prog.image} alt={prog.title} className="w-full h-full object-cover" style={{ objectPosition: 'center 20%' }} />
                 <div className={`absolute inset-0 bg-gradient-to-t ${prog.color} opacity-55`} />
                 <div className="absolute bottom-4 left-6 text-white">
                   <div className="text-3xl mb-1">{prog.emoji}</div>

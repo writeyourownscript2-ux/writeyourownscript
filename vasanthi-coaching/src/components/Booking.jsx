@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from '../hooks/useInView'
 
-const WA_LINK = "https://wa.me/918939645676?text=Hi%20Vasanthi%2C%20I%20want%20to%20book%20a%20free%20session"
+const WA_LINK = "https://wa.me/918939645676?text=Hi%2C%20I%20want%20to%20book%20an%20appointment"
 const BG = "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1400&q=80"
 
 export default function Booking() {
@@ -24,9 +24,9 @@ export default function Booking() {
           </span>
 
           <h2 className="font-playfair text-4xl md:text-5xl font-bold text-white mb-6">
-            Book Your Free{' '}
+            Book Your{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-400">
-              Discovery Session
+              Appointment
             </span>
           </h2>
 
@@ -38,7 +38,7 @@ export default function Booking() {
           {/* Details cards */}
           <div className="grid md:grid-cols-2 gap-6 mb-12">
             {[
-              { icon: '🎁', title: 'First Session FREE', desc: 'Zero cost, zero risk. Just pure value.' },
+              { icon: '🎁', title: 'Personalised Session', desc: 'A focused session tailored to your needs.' },
               { icon: '⏱️', title: '1 Hour Session', desc: 'A full hour dedicated entirely to you.' },
             ].map(item => (
               <div
@@ -67,6 +67,13 @@ export default function Booking() {
           <p className="text-pink-300/60 text-sm mt-6">
             No spam. No pressure. Just a genuine conversation about your transformation.
           </p>
+
+          {/* Special note */}
+          <div className="mt-8 bg-white/10 backdrop-blur rounded-2xl p-5 border border-white/20 max-w-xl mx-auto">
+            <p className="text-white/90 text-sm leading-relaxed">
+              🎓 <strong>Special Initiative:</strong> Free session available for rural school students appearing for Class 10. Reach out on WhatsApp to know more.
+            </p>
+          </div>
         </motion.div>
       </div>
     </section>

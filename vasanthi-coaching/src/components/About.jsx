@@ -23,7 +23,7 @@ export default function About() {
               <img
                 src={ABOUT_IMG}
                 alt="Vasanthi Life Coach"
-                className="w-full h-[500px] object-cover"
+                className="w-full object-cover object-center"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-pink-900/40 to-transparent" />
             </div>

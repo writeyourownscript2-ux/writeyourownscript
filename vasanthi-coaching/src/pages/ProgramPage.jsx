@@ -6,7 +6,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import FloatingWhatsApp from '../components/FloatingWhatsApp'
 
-const WA_LINK = "https://wa.me/918939645676?text=Hi%20Vasanthi%2C%20I%20want%20to%20book%20a%20free%20session"
+const WA_LINK = "https://wa.me/918939645676?text=Hi%20Vasanthi%2C%20I%20want%20to%20book%20an%20appointment"
 
 export default function ProgramPage() {
   const { id } = useParams()
@@ -34,10 +34,10 @@ export default function ProgramPage() {
       <Navbar />
 
       {/* Hero banner */}
-      <div className="relative h-80 md:h-[420px] overflow-hidden mt-0">
-        <img src={data.image} alt={data.title} className="w-full h-full object-cover" />
-        <div className={`absolute inset-0 bg-gradient-to-t ${data.color} opacity-65`} />
-        <div className="absolute inset-0 bg-black/30" />
+      <div className="relative h-80 md:h-[460px] overflow-hidden mt-0">
+        <img src={data.image} alt={data.title} className="w-full h-full object-cover" style={{ objectPosition: 'center 15%' }} />
+        <div className={`absolute inset-0 bg-gradient-to-t ${data.color} opacity-45`} />
+        <div className="absolute inset-0 bg-black/20" />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-6">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <div className="text-6xl mb-4">{data.emoji}</div>
@@ -67,7 +67,7 @@ export default function ProgramPage() {
           className="grid grid-cols-3 gap-4 mb-12">
           {data.photos.map((src, i) => (
             <div key={i} className="rounded-2xl overflow-hidden h-44 shadow-md">
-              <img src={src} alt="" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              <img src={src} alt="" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
             </div>
           ))}
         </motion.div>

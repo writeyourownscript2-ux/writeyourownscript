@@ -8,10 +8,10 @@ export const programs = [
     borderColor: 'border-rose-200',
     problems: ['Confidence issues', 'Emotional overwhelm', 'Lack of clarity'],
     description: "Phoenix Women is a transformational coaching program designed for women who feel stuck, lost, or burned out. You've been strong for everyone else — now it's time to rise for yourself. This program helps you shed the old identity that no longer serves you and step into the powerful, confident woman you were always meant to be.",
-    image: 'https://images.unsplash.com/photo-1614644147798-f8c0fc9da7f6?w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=1200&q=80',
     photos: [
       'https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&q=80',
-      'https://images.unsplash.com/photo-1610216705422-caa3fcb6d158?w=400&q=80',
+      'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80',
       'https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=400&q=80',
     ],
     benefits: [
@@ -41,11 +41,11 @@ export const programs = [
     borderColor: 'border-violet-200',
     problems: ['Career confusion', 'Overthinking', 'Lack of focus'],
     description: "Phoenix Future Visionaries is built for students and young adults — boys and girls — who feel overwhelmed by choices, paralyzed by overthinking, or unsure of their path. This program takes you from confusion to clarity, from self-doubt to confidence, and from procrastination to purposeful action — so you can lead your own future with intention.",
-    image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=1200&q=80',
     photos: [
-      'https://images.unsplash.com/photo-1621452773781-0f992fd1f5cb?w=400&q=80',
-      'https://images.unsplash.com/photo-1588776814546-ec7e1b3a0a23?w=400&q=80',
-      'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&q=80',
+      'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&q=80',
+      'https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=400&q=80',
+      'https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=400&q=80',
     ],
     benefits: [
       'Discover your unique strengths and natural talents',

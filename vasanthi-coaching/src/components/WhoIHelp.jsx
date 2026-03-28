@@ -1,14 +1,15 @@
 import { motion } from 'framer-motion'
 import { useInView } from '../hooks/useInView'
 
-const WA_LINK = "https://wa.me/918939645676?text=Hi%20Vasanthi%2C%20I%20want%20to%20book%20a%20free%20session"
+const WA_LINK = "https://wa.me/918939645676?text=Hi%20Vasanthi%2C%20I%20want%20to%20book%20an%20appointment"
 
 const groups = [
   {
     range: '6 – 18',
-    label: 'Young Students & Teens',
-    emoji: '🌸',
-    image: 'https://images.unsplash.com/photo-1621452773781-0f992fd1f5cb?w=600&q=80',
+    label: 'Students & Teens',
+    emoji: '🌱',
+    // Indian school students — boys and girls
+    image: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&q=80',
     color: 'from-rose-400 to-pink-500',
     bg: 'from-rose-50 to-pink-50',
     border: 'border-rose-200',
@@ -23,9 +24,10 @@ const groups = [
   },
   {
     range: '18 – 40',
-    label: 'Young Women & Professionals',
+    label: 'Young Adults & Professionals',
     emoji: '🔥',
-    image: 'https://images.unsplash.com/photo-1614644147798-f8c0fc9da7f6?w=600&q=80',
+    // Young Indian professional woman
+    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80',
     color: 'from-pink-500 to-purple-600',
     bg: 'from-pink-50 to-purple-50',
     border: 'border-pink-200',
@@ -40,9 +42,10 @@ const groups = [
   },
   {
     range: '40 – 60',
-    label: 'Mature Women & Reinventors',
+    label: 'Mature Adults & Reinventors',
     emoji: '👑',
-    image: 'https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=600&q=80',
+    // Mature Indian woman — graceful, experienced
+    image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&q=80',
     color: 'from-purple-500 to-violet-600',
     bg: 'from-purple-50 to-violet-50',
     border: 'border-purple-200',
@@ -70,13 +73,13 @@ export default function WhoIHelp() {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <span className="section-tag">For Every Woman</span>
+          <span className="section-tag">For Everyone</span>
           <h2 className="font-playfair text-4xl md:text-5xl font-bold text-gray-900 mt-2">
             Wherever You Are in{' '}
             <span className="gradient-text">Your Journey</span>
           </h2>
           <p className="text-gray-500 mt-4 text-lg max-w-2xl mx-auto">
-            Transformation has no age limit. Whether you're just beginning or ready to reinvent — there's a place for you here.
+            Transformation has no age limit and no gender barrier. Whether you're just beginning or ready to reinvent — there's a place for you here.
           </p>
         </motion.div>
 
@@ -94,7 +97,7 @@ export default function WhoIHelp() {
                 <img
                   src={g.image}
                   alt={g.label}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className={`absolute inset-0 bg-gradient-to-t ${g.color} opacity-50`} />
 

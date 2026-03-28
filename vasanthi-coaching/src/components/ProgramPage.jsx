@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { motion } from 'framer-motion'
 
-const WA_LINK = "https://wa.me/918939645676?text=Hi%20Vasanthi%2C%20I%20want%20to%20book%20a%20free%20session"
+const WA_LINK = "https://wa.me/918939645676?text=Hi%20Vasanthi%2C%20I%20want%20to%20book%20an%20appointment"
 
 export default function ProgramPage({ data, onClose }) {
   useEffect(() => {
