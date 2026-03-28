@@ -38,8 +38,8 @@ export default function Booking() {
           {/* Details cards */}
           <div className="grid md:grid-cols-2 gap-6 mb-12">
             {[
-              { icon: '🎁', title: 'Personalised Session', desc: 'A focused session tailored to your needs.' },
-              { icon: '⏱️', title: '1 Hour Session', desc: 'A full hour dedicated entirely to you.' },
+              { icon: '🎁', title: 'Personalised Session', desc: 'Tailor-made coaching sessions crafted around your unique goals and journey.' },
+              { icon: '⏱️', title: 'Flexible Scheduling', desc: 'Weekly sessions or twice a week — we work around what suits you best.' },
             ].map(item => (
               <div
                 key={item.title}
@@ -64,7 +64,7 @@ export default function Booking() {
             Book on WhatsApp
           </a>
 
-          <p className="text-pink-300/60 text-sm mt-6">
+          <p className="text-white/70 text-sm mt-6">
             No spam. No pressure. Just a genuine conversation about your transformation.
           </p>
         </motion.div>

@@ -5,7 +5,6 @@ import Hero from '../components/Hero'
 import About from '../components/About'
 import WhoIHelp from '../components/WhoIHelp'
 import Programs from '../components/Programs'
-import CoachingCategories from '../components/CoachingCategories'
 import Transformation from '../components/Transformation'
 import Testimonials from '../components/Testimonials'
 import Booking from '../components/Booking'
@@ -40,7 +39,6 @@ export default function Home() {
       <WhoIHelp />
 
       <Programs />
-      <CoachingCategories />
       <Transformation />
       <Testimonials />
 

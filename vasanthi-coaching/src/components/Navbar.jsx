@@ -18,7 +18,10 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  const links = ['About', 'Programs', 'Coaching', 'Book']
+  const links = [
+    { label: 'About', id: 'about' },
+    { label: 'Coaching Programs', id: 'programs' },
+  ]
 
   // If on home, smooth scroll; if on another page, go to /#section
   const handleNavClick = (e, section) => {
@@ -53,15 +56,15 @@ export default function Navbar() {
         {/* Desktop links */}
         <ul className="hidden md:flex gap-8 list-none m-0 p-0">
           {links.map(l => (
-            <li key={l}>
+            <li key={l.label}>
               <a
-                href={`/#${l.toLowerCase()}`}
-                onClick={e => handleNavClick(e, l.toLowerCase())}
+                href={`/#${l.id}`}
+                onClick={e => handleNavClick(e, l.id)}
                 className={`font-medium transition-colors text-sm tracking-wide ${
                   scrolled ? 'text-gray-600 hover:text-pink-600' : 'text-white/90 hover:text-pink-300'
                 }`}
               >
-                {l}
+                {l.label}
               </a>
             </li>
           ))}
@@ -74,6 +77,28 @@ export default function Navbar() {
               }`}
             >
               🔥 Phoenix
+            </a>
+          </li>
+          <li>
+            <a
+              href="/program/phoenix-leaders"
+              onClick={e => { e.preventDefault(); navigate('/program/phoenix-leaders') }}
+              className={`font-medium transition-colors text-sm tracking-wide ${
+                scrolled ? 'text-violet-600 hover:text-violet-700' : 'text-violet-300 hover:text-violet-200'
+              }`}
+            >
+              🌟 Visionaries
+            </a>
+          </li>
+          <li>
+            <a
+              href="/#book"
+              onClick={e => handleNavClick(e, 'book')}
+              className={`font-medium transition-colors text-sm tracking-wide ${
+                scrolled ? 'text-gray-600 hover:text-pink-600' : 'text-white/90 hover:text-pink-300'
+              }`}
+            >
+              Book
             </a>
           </li>
         </ul>
@@ -97,12 +122,12 @@ export default function Navbar() {
         <div className="md:hidden bg-white border-t border-gray-100 px-6 py-4 flex flex-col gap-4">
           {links.map(l => (
             <a
-              key={l}
-              href={`/#${l.toLowerCase()}`}
-              onClick={e => handleNavClick(e, l.toLowerCase())}
+              key={l.label}
+              href={`/#${l.id}`}
+              onClick={e => handleNavClick(e, l.id)}
               className="text-gray-700 font-medium py-1"
             >
-              {l}
+              {l.label}
             </a>
           ))}
           <a
@@ -110,7 +135,21 @@ export default function Navbar() {
             onClick={e => { e.preventDefault(); setMenuOpen(false); navigate('/phoenix-women') }}
             className="text-pink-600 font-medium py-1"
           >
-            🔥 Phoenix Women
+            🔥 Phoenix
+          </a>
+          <a
+            href="/program/phoenix-leaders"
+            onClick={e => { e.preventDefault(); setMenuOpen(false); navigate('/program/phoenix-leaders') }}
+            className="text-violet-600 font-medium py-1"
+          >
+            🌟 Visionaries
+          </a>
+          <a
+            href="/#book"
+            onClick={e => handleNavClick(e, 'book')}
+            className="text-gray-700 font-medium py-1"
+          >
+            Book
           </a>
         </div>
       )}

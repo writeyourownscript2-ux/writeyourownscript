@@ -4,18 +4,26 @@ import { useInView } from '../hooks/useInView'
 const testimonials = [
   {
     name: 'Sivashankari',
-    role: 'Vice President, IV Meditation School',
+    role: 'Vice Principal, I V Matriculation School',
     initials: 'SS',
     color: 'from-pink-500 to-rose-500',
-    text: 'I have learned how to set clear intentions. The session gave clarity on how to choose ambitions or role models and how to imbibe their qualities in us. I also learned about gratitude and I will practice it regularly.',
+    text: 'I have learned how to set clear intentions. The session gave clarity on how to choose role models and how to imbibe their qualities in us. I also learned about gratitude and I will practice it regularly.',
     stars: 5,
   },
   {
     name: 'Sahana',
-    role: 'Student, Class 10 (Age 14)',
+    role: 'Student, Class 10',
     initials: 'SA',
     color: 'from-purple-500 to-violet-500',
-    text: 'After attending this session I learned how to fix the goal and vision of my life. I have learned to say gratitude and I now feel grateful for all the things I have received from God. Earlier I don\'t like to study — it was like "why should I study?" Now I have changed my mindset. Now I am choosing to study. I thank our life coach for giving us the clarity on what we should do and how we should do.',
+    text: 'After attending this session I learned how to fix the goal and vision of my life. I have learned to say gratitude and I now feel grateful for all the things I have received from God. Earlier I don\'t like to study — it was like "why should I study?" Now I have changed my mindset. Now I am choosing to study. I thank our life coach for giving me the clarity on how to choose aim and what I should do and how I should do.',
+    stars: 5,
+  },
+  {
+    name: 'Adha',
+    role: 'Student',
+    initials: 'AD',
+    color: 'from-rose-400 to-pink-500',
+    text: 'By attending this session I have gained clarity on how I should focus and study, and understood the importance of studying properly. Thank you coach for helping me understand about school and education. Earlier I didn\'t like to study, now I choose to study. Finding and developing my passion and skills will give me a better life.',
     stars: 5,
   },
 ]
@@ -43,7 +51,7 @@ export default function Testimonials() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {testimonials.map((t, i) => (
             <motion.div
               key={t.name}
