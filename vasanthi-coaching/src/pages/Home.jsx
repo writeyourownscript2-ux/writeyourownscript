@@ -7,6 +7,7 @@ import WhoIHelp from '../components/WhoIHelp'
 import Programs from '../components/Programs'
 import CoachingCategories from '../components/CoachingCategories'
 import Transformation from '../components/Transformation'
+import Testimonials from '../components/Testimonials'
 import Booking from '../components/Booking'
 import ContactForm from '../components/ContactForm'
 import FinalCTA from '../components/FinalCTA'
@@ -41,6 +42,7 @@ export default function Home() {
       <Programs />
       <CoachingCategories />
       <Transformation />
+      <Testimonials />
 
       <ParallaxStrip
         image="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=80"
