@@ -31,10 +31,10 @@ export default function Home() {
       <Helmet>
         <title>Write Your Own Script | Life Coaching by Vasanthi</title>
         <meta name="description" content="Transformational life coaching for women and young adults. Rebuild confidence, find clarity and rise into your purpose with Vasanthi." />
-        <link rel="canonical" href="https://writeyourownscript.in/" />
+        <link rel="canonical" href="https://www.writeyourownscript.in/" />
         <meta property="og:title" content="Write Your Own Script | Life Coaching by Vasanthi" />
         <meta property="og:description" content="Transformational life coaching for women and young adults. Rebuild confidence, find clarity and rise into your purpose." />
-        <meta property="og:url" content="https://writeyourownscript.in/" />
+        <meta property="og:url" content="https://www.writeyourownscript.in/" />
         <meta property="og:type" content="website" />
       </Helmet>
       <Navbar />

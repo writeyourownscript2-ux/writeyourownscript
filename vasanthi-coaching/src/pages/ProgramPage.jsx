@@ -35,10 +35,10 @@ export default function ProgramPage() {
       <Helmet>
         <title>{data.title} | Write Your Own Script</title>
         <meta name="description" content={data.description.slice(0, 155)} />
-        <link rel="canonical" href={`https://writeyourownscript.in/program/${data.id}`} />
+        <link rel="canonical" href={`https://www.writeyourownscript.in/program/${data.id}`} />
         <meta property="og:title" content={`${data.title} | Write Your Own Script`} />
         <meta property="og:description" content={data.description.slice(0, 155)} />
-        <meta property="og:url" content={`https://writeyourownscript.in/program/${data.id}`} />
+        <meta property="og:url" content={`https://www.writeyourownscript.in/program/${data.id}`} />
         <meta property="og:image" content={data.image} />
         <meta property="og:type" content="website" />
       </Helmet>
