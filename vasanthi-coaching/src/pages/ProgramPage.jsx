@@ -39,8 +39,12 @@ export default function ProgramPage() {
         <meta property="og:title" content={`${data.title} | Write Your Own Script`} />
         <meta property="og:description" content={data.description.slice(0, 155)} />
         <meta property="og:url" content={`https://www.writeyourownscript.in/program/${data.id}`} />
-        <meta property="og:image" content={data.image} />
+        <meta property="og:image" content="https://www.writeyourownscript.in/og-image.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://www.writeyourownscript.in/og-image.png" />
       </Helmet>
       <Navbar />
 

@@ -23,6 +23,11 @@ export default function PhoenixPage() {
         <meta property="og:description" content="Phoenix Women is a transformational coaching program for women who feel stuck or burned out. Rise strong, reclaim yourself and become unstoppable." />
         <meta property="og:url" content="https://www.writeyourownscript.in/phoenix-women" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.writeyourownscript.in/og-image.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://www.writeyourownscript.in/og-image.png" />
       </Helmet>
       <Navbar />
 

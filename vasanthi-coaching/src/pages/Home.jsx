@@ -36,6 +36,11 @@ export default function Home() {
         <meta property="og:description" content="Transformational life coaching for women and young adults. Rebuild confidence, find clarity and rise into your purpose." />
         <meta property="og:url" content="https://www.writeyourownscript.in/" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.writeyourownscript.in/og-image.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://www.writeyourownscript.in/og-image.png" />
       </Helmet>
       <Navbar />
       <Hero />
