@@ -1,6 +1,7 @@
 import { useParams, useNavigate } from 'react-router-dom'
 import { useEffect } from 'react'
 import { motion } from 'framer-motion'
+import { Helmet } from 'react-helmet-async'
 import { programs } from '../data/programs'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
@@ -31,6 +32,16 @@ export default function ProgramPage() {
 
   return (
     <>
+      <Helmet>
+        <title>{data.title} | Write Your Own Script</title>
+        <meta name="description" content={data.description.slice(0, 155)} />
+        <link rel="canonical" href={`https://writeyourownscript.in/program/${data.id}`} />
+        <meta property="og:title" content={`${data.title} | Write Your Own Script`} />
+        <meta property="og:description" content={data.description.slice(0, 155)} />
+        <meta property="og:url" content={`https://writeyourownscript.in/program/${data.id}`} />
+        <meta property="og:image" content={data.image} />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <Navbar />
 
       {/* Hero banner */}

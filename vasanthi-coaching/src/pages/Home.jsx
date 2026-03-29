@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import About from '../components/About'
@@ -27,6 +28,15 @@ export default function Home() {
   }, [location.hash])
   return (
     <>
+      <Helmet>
+        <title>Write Your Own Script | Life Coaching by Vasanthi</title>
+        <meta name="description" content="Transformational life coaching for women and young adults. Rebuild confidence, find clarity and rise into your purpose with Vasanthi." />
+        <link rel="canonical" href="https://writeyourownscript.in/" />
+        <meta property="og:title" content="Write Your Own Script | Life Coaching by Vasanthi" />
+        <meta property="og:description" content="Transformational life coaching for women and young adults. Rebuild confidence, find clarity and rise into your purpose." />
+        <meta property="og:url" content="https://writeyourownscript.in/" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <Navbar />
       <Hero />
       <About />

@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import { Helmet } from 'react-helmet-async'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import FloatingWhatsApp from '../components/FloatingWhatsApp'
@@ -14,6 +15,15 @@ export default function PhoenixPage() {
 
   return (
     <>
+      <Helmet>
+        <title>Phoenix Women | Rise Strong, Reclaim Yourself | Write Your Own Script</title>
+        <meta name="description" content="Phoenix Women is a transformational coaching program for women who feel stuck or burned out. Rise strong, reclaim yourself and become unstoppable with Vasanthi." />
+        <link rel="canonical" href="https://writeyourownscript.in/phoenix-women" />
+        <meta property="og:title" content="Phoenix Women | Rise Strong, Reclaim Yourself" />
+        <meta property="og:description" content="Phoenix Women is a transformational coaching program for women who feel stuck or burned out. Rise strong, reclaim yourself and become unstoppable." />
+        <meta property="og:url" content="https://writeyourownscript.in/phoenix-women" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <Navbar />
 
       {/* Hero */}
