@@ -3,7 +3,12 @@ import logoPng from '../assets/logo.png'
 const WA_LINK = "https://wa.me/918148115360?text=Hi%2C%20I%20want%20to%20book%20an%20appointment"
 
 export default function Footer() {
-  const links = ['About', 'Programs', 'Coaching', 'Book']
+  const quickLinks = [
+    { label: 'About', id: 'about' },
+    { label: 'Coaching Programs', id: 'programs' },
+    { label: 'Book', id: 'book' },
+    { label: 'Testimonials', id: 'testimonials' },
+  ]
 
   return (
     <footer className="bg-gray-900 text-gray-400 py-16">
@@ -32,10 +37,10 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Quick Links</h4>
             <ul className="space-y-3">
-              {links.map(l => (
-                <li key={l}>
-                  <a href={`/#${l.toLowerCase()}`} className="text-gray-500 hover:text-pink-400 transition-colors text-sm">
-                    {l}
+              {quickLinks.map(l => (
+                <li key={l.label}>
+                  <a href={`/#${l.id}`} className="text-gray-500 hover:text-pink-400 transition-colors text-sm">
+                    {l.label}
                   </a>
                 </li>
               ))}
@@ -47,7 +52,7 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Programs</h4>
             <ul className="space-y-3 text-sm text-gray-500">
               <li>🔥 Phoenix Women</li>
-              <li>🌟 Phoenix Future Visionaries</li>
+              <li>🌟 Future Visionaries</li>
               <li>🎯 Clarity Coaching</li>
               <li>💎 Confidence Coaching</li>
               <li>🧠 Mindset Coaching</li>

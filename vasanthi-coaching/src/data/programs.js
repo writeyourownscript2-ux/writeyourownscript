@@ -36,7 +36,7 @@ export const programs = [
   {
     id: 'phoenix-leaders',
     emoji: '🌟',
-    title: 'Phoenix Future Visionaries',
+    title: 'Future Visionaries',
     tagline: 'Build Clarity. Lead Your Future.',
     color: 'from-violet-500 to-purple-600',
     borderColor: 'border-violet-200',

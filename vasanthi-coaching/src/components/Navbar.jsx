@@ -101,6 +101,17 @@ export default function Navbar() {
               Book
             </a>
           </li>
+          <li>
+            <a
+              href="/#testimonials"
+              onClick={e => handleNavClick(e, 'testimonials')}
+              className={`font-medium transition-colors text-sm tracking-wide ${
+                scrolled ? 'text-gray-600 hover:text-pink-600' : 'text-white/90 hover:text-pink-300'
+              }`}
+            >
+              Testimonials
+            </a>
+          </li>
         </ul>
 
 
@@ -150,6 +161,13 @@ export default function Navbar() {
             className="text-gray-700 font-medium py-1"
           >
             Book
+          </a>
+          <a
+            href="/#testimonials"
+            onClick={e => handleNavClick(e, 'testimonials')}
+            className="text-gray-700 font-medium py-1"
+          >
+            Testimonials
           </a>
         </div>
       )}
