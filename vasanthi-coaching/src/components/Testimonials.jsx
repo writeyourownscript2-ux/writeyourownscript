@@ -7,7 +7,7 @@ const testimonials = [
     role: 'Vice Principal, I V Matriculation School',
     initials: 'SS',
     color: 'from-pink-500 to-rose-500',
-    text: 'I have learned how to set clear intentions. The session gave clarity on how to choose role models and how to imbibe their qualities in us. I also learned about gratitude and I will practice it regularly.',
+    text: 'I have learned how to set clear intentions. The session gave clarity on how to choose role models. I also learned about gratitude and I will practice it regularly.',
     stars: 5,
   },
   {
