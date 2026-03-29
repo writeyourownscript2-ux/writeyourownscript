@@ -18,7 +18,7 @@ export default function Footer() {
           <div>
             <img src={logoPng} alt="Write Your Own Script" className="h-14 w-14 rounded-full object-cover border-2 border-pink-400/30 mb-4" />
             <p className="text-gray-500 text-sm leading-relaxed mb-6">
-              Helping you rewrite your story — with clarity, confidence, and purpose.
+              Helping you rewrite your story — with clarity, confidence and purpose.
             </p>
             <a
               href={WA_LINK}
